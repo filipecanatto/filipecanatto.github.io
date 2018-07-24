@@ -14,26 +14,19 @@
       <!-- Google fonts -->
       <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
+       <!--jquery-->
+       <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+      
+       <script> 
+         $(function(){
+             $("#header").load("header.html"); 
+         });
+       </script> 
+
    </head>
    <body>
-      <div>
-         <header class='container' style="padding-top: 10px; padding-bottom: 10px">
-            <h1>
-                <a href='#'>
-                    <span style="color:blue;font-weight:bold">f</span>ilipe
-                    <span style="color:blue;font-weight:bold">c</span>anatto
-                </a>
-            </h1>
-            <h6>#programação e afíns</h6>
-            <nav>
-                <a class="text-muted" href="#">recentes</a>
-                <a class="p-2 text-muted" href="#">arquivos</a>
-                <a class="p-2 text-muted" href="#">sobre</a>
-            </nav>
-         </header>
-         <div class='end_of_header'> </div>
-      </div>
-      <div class='container'>
+       <div id="header"></div>
+        <div class='container'>
          <article class="blog-post">
             <h4 class="blog-post-title">
                <a href='articles/computation-layers.html'>por de tras do programa</a>
