@@ -9,7 +9,7 @@ header h1 , h6{
 
 header h1 a{
     color: gray;
-    text-decoration: none;
+	text-decoration: none;
 }
 
 header h6{
