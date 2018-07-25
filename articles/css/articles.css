@@ -7,3 +7,9 @@ article h2{
 	margin-bottom: 30px;
 }
 
+.image {
+    width: 200px;
+    height: 200px;
+    margin-left: -10px;
+}
+
