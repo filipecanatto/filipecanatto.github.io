@@ -1,55 +1,150 @@
-<!doctype html>
-<html lang='pt-BR'>
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-      <title>filipecanatto</title>
-	  <link rel="icon" href="favicon.ico">
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-      <link rel='stylesheet' href='blog-bootstrap.css'>
-     
-      <link rel='stylesheet' href='generic.css'>
-      <link rel='stylesheet' href='header.css'>
+<!DOCTYPE html>
+<html lang="en">
 
-      <!-- Google fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <head>
 
-       <!--jquery-->
-       <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-      
-       <script> 
-         $(function(){
-             $("#header").load("header.html"); 
-             $("#footer").load("footer.html"); 
-         });
-       </script> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-   </head>
-   <body>
-       <div id="header"></div>
-        <div class='container'>
-         <article class="blog-post">
-            <h4 class="blog-post-title">
-               <a href='articles/computation-layers.html'>Atrás do Programa</a>
-            </h4>
-            <p class="blog-post-meta">23 Jul 2018</p>
-            <p>Muitos programadores não sabem oque acontece nas camadas abaixo do programa, como acontece a integração entre programa, sistema operacional e hardware. Esse artigo traz um vislumbre sobre oque ocorre por debaixo dos panos quando o programa esta em execução</p>
-            <hr>
-         </article>
-         <article class="blog-post">
-            <h4 class="blog-post-title">
-                <a href='articles/tdd_x_unit_test.html'>TTD != Teste Unitário</a>
-            </h4>
-            <p class="blog-post-meta">23 Jul 2018</p>
-            <p>Teste unitário é uma pratica onde o desenvolvedor escreve um sistema para testar o sistema que será entregue para o cliente. </br> TDD (Test Driven Development) é uma metologia de desenvolvimento ágil onde o programador exercita o seguinte ciclo: escreve o programa, executa o programa, e se o programa falhar ele corrige o problema. Quem pratica TDD obrigatoriamente escreve teste unitário, quem escreve teste unitário nem sempre precisa usar TDD.</p>
-            <hr>
-        </article>
+    <title>fcanattoBlog</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div id='footer'></div>
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-   </body>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('img/home-bg.jpg')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>@fcanatto</h1>
+              <span class="subheading">Computação, Programação e Afins</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview">
+            <a href="articles/computation-layers.html">
+              <h2 class="post-title">
+                Atrás do Programa
+              </h2>
+              <h3 class="post-subtitle">
+                Nesse artigo busco dar ao leitor uma visão geral do que acontece quando o programa esta em execução, destacando seus principais componente apatir de um ponto de vista top-down
+              </h3>
+            </a>
+            <p class="post-meta">23 Jul 2018</p>
+          </div>
+          <hr>
+          <div class="post-preview">
+            <a href="articles/tdd_x_unit_test.html">
+              <h2 class="post-title">
+                TTD != Teste Unitário
+              </h2>
+              <h3 class="post-subtitle">
+                Quem pratica TDD (Test Driven Development) obrigatoriamente escreve teste unitário, quem escreve teste unitário não necessariamente usa TDD.
+              </h3>
+            </a>
+            <p class="post-meta">23 Jul 2018</p>
+          </div>
+          <hr>
+          <!-- Pager -->
+          <div class="clearfix">
+            <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; Your Website 2018</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
+
+  </body>
+
 </html>
