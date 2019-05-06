@@ -1,7 +1,7 @@
 /*! * Start Bootstrap - Clean Blog v5.0.2 (https://startbootstrap.com/template-overviews/clean-blog) * Copyright 2013-2018 Start Bootstrap * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-clean-blog/blob/master/LICENSE) */
 body{
     font-size:20px;
-    color:#212529;
+    color:#2b353a;
     font-family:'Times New Roman', Lora,serif
 }
 p{
@@ -16,7 +16,7 @@ h1,h2,h3,h4,h5,h6{
     font-family:'Times New Roman','Helvetica Neue',Helvetica,Arial,sans-serif
 }
 a{
-    color:#212529;
+    color:#2b353a;
     -webkit-transition:all .2s;
     transition:all .2s
 }
@@ -126,13 +126,13 @@ img::-moz-selection{
         background-color:rgba(255,255,255,.9)
     }
     #mainNav.is-fixed .navbar-brand{
-        color:#212529
+        color:#2b353a
     }
     #mainNav.is-fixed .navbar-brand:focus,#mainNav.is-fixed .navbar-brand:hover{
         color:#0085a1
     }
     #mainNav.is-fixed .navbar-nav>li.nav-item>a{
-        color:#212529
+        color:#2b353a
     }
     #mainNav.is-fixed .navbar-nav>li.nav-item>a:focus,#mainNav.is-fixed .navbar-nav>li.nav-item>a:hover{
         color:#0085a1
@@ -156,7 +156,7 @@ header.masthead .overlay{
     left:0;
     height:100%;
     width:100%;
-    background-color:#212529;
+    background-color:#2b353a;
     opacity:.5
 }
 header.masthead .page-heading,header.masthead .post-heading,header.masthead .site-heading{
@@ -219,22 +219,22 @@ header.masthead .post-heading .meta a{
     }
 }
 .post-preview>a{
-    color:#212529
+    color:#2b353a
 }
 .post-preview>a:focus,.post-preview>a:hover{
     text-decoration:none;
     color:#0085a1
 }
 .post-preview>a>.post-title{
-    font-size:30px;
-    margin-top:30px;
+    font-size:25px;
+    margin-top:20px;
     margin-bottom:10px;
-    color: #2b353a;
+   
 }
 .post-preview>a>.post-subtitle{
     font-weight:300;
     margin:0 0 10px;
-    color: #2b353a;
+    
 }
 .post-preview>.post-meta{
     font-size:18px;
@@ -244,7 +244,7 @@ header.masthead .post-heading .meta a{
 }
 .post-preview>.post-meta>a{
     text-decoration:none;
-    color:#212529
+    color:#2b353a
 }
 .post-preview>.post-meta>a:focus,.post-preview>.post-meta>a:hover{
     text-decoration:underline;
