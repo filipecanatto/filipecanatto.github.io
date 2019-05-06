@@ -228,12 +228,13 @@ header.masthead .post-heading .meta a{
 .post-preview>a>.post-title{
     font-size:30px;
     margin-top:30px;
-    margin-bottom:10px
+    margin-bottom:10px;
+    color: #2b353a;
 }
 .post-preview>a>.post-subtitle{
     font-weight:300;
     margin:0 0 10px;
-    color: #616161!important;
+    color: #2b353a;
 }
 .post-preview>.post-meta{
     font-size:18px;
@@ -249,7 +250,11 @@ header.masthead .post-heading .meta a{
     text-decoration:underline;
     color:#0085a1
 }
-
+@media only screen and (min-width:768px){
+    .post-preview>a>.post-title{
+       /* font-size:36px */
+    }
+}
 .floating-label-form-group{
     font-size:14px;
     position:relative;
