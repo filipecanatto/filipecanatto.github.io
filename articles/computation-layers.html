@@ -1,164 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Clean Blog - Start Bootstrap Theme</title>
+  <title>Clean Blog - Start Bootstrap Theme</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <!-- Custom fonts for this template -->
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
 
-    <!-- Custom styles for this template -->
-    <link href="../css/clean-blog.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="../css/clean-blog.min.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <!--span class="subheading">Computação, Programação e Afins</span-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <h2>O computador em Camadas</h2>
+          <p>O computador é uma maquina complexa, uma boa maneira de ter uma visão gral de seu funcionamento é
+            dividi-la em componentes e estudar a responsabilidade de cada um individualmente, e depois entender como
+            esses componentes se integram. Nesse artigo busco dar ao leitor uma visão geral do que acontece quando o
+            programa esta em execução, destacando seus principais componente apatir de um ponto de vista top-down (de
+            cima para baixo), conforme figura a seguir:</p>
+
+          <img style="width:200px; height:200px; margin-left:-10px" class="img-fluid" src="../img/computer-layers.png"
+            alt="">
+
+          <p>O computador possui componentes fisicos e abstratos, hardware e software respectivamente. As sessões
+            abaixo irão detalhar mais a parte abstrata, o software. O hardware será visto apenas como o componete
+            fisico capaz de seguir as instruções do software.</p>
+
+          <p>Muitos programadores não sabem oque acontece nas camadas abaixo do programa, como acontece a integração
+            entre programa, sistema operacional e hardware. Esse artigo traz um vislumbre sobre oque ocorre por debaixo
+            dos panos quando o programa esta em execução.</p>
+
+          <h4 class="">Programas de Usuário</h4>
+
+          <p>São programas usados pelo usuário final, seja ele um economista organizando seu trabalho em um editor de
+            planilhas, um engenheiro civil construindo um projeto de um novo edifício usando um DAC (desenho assistido
+            por computador), ou um programador escrevendo seus programas em um editor de texto. Esse é motivo pelo qual
+            os computadores existem, para prover suporte a diversas áreas através de programas de usuário. Esses
+            programas são criados usando uma linguagem de programação, que sucintamente falando são maneiras de
+            instruir o hardware a fazer alguma coisa.</p>
+
+          <h4 class="">Sistema Operacional</h4>
+
+          <p>Quando criamos nosso programa ele não funciona de forma independente, ele sempre vai interagir com o
+            sistema operacional para pedir suporte, mas oque seria exatamente esse suporte?. São funções já prontas
+            disponíveis em memória que podem ser usadas pelos programas de usuário. Funções que implementam
+            funcionalidades de propósito geral como escrever dados em dispositivo de saída, ler dados de um dispositivo
+            de entrada, alocar memória... Também é responsabilidade do sistema operacional gerenciar a memória, cada
+            programa deve ter uma área de memoria reservada , um programa não pode ler ou escrever dados em uma posição
+            de memoria que esta em uso por outros programas.</p>
+
+          <h5> Chamadas de Sistema</h5>
+
+          <p>Quando um programa solicita uma função do sistema operacional ele faz isso através de uma chamada de
+            sistema (syscall), quando isso acontece o programa para de executar e o sistema operacional entra em cena.
+            O programa pode interagir diretamente com o sistema operacional ou através de uma biblioteca padrão
+            disponibilizada junto com o sistema operacional, por exemplo glibc (GNU library C) do linux.</p>
+
+          <h5> O Kernel</h5>
+
+          <p>O componente principal do sistema operacional é o kernel (do inglês núcleo), é nele que ficam
+            implementadas todas as interfaces das chamadas de sistemas, e também é ele que gerencia os drivers e a
+            memoria. Na figura acima foi usada um figura que mostra a arquitetura de um sistema operacional linux porem
+            o conceito de kernel esta presente em todos de sistemas operacionais.</p>
+
+          <h4>Hardware</h4>
+
+          <p>Todas as camadas acima da camada do hardware só podem ser visualizadas através de abstrações, mas o
+            hardware é algo físico ele pode ser visto, tocado e sentido. É ele o responsável por executar as instruções
+            do software. O Hardware do computador é composto de vários componentes, os principais são: I/O
+            (input/output) ,processador e a memoria. O hardware realiza algumas operações básicas para qualquer
+            computador, como: entrada e saída de dados, processamento e armazenamento. A interação entre esses
+            componentes é basicamente da seguinte forma: o processador obtém dados e instruções da memoria, os
+            dispositivos de entrada guardam dados na memoria e os dispositivos de saída leem dados da memoria e
+            apresentam o resultado da computação para o usuário através de um monitor ou para outro computador através
+            de uma placa de rede. Os cursos de ciência da computação e analise de sistemas não se aprofundam muito no
+            estudo do hardware, geralmente o mais profundo que chegamos é até portas lógicas.</p>
+
+          <blockquote class="blockquote">
+            "Dispositivos de hardware são construídos a partir de pacote integrados de portas lógicas. E essas portas,
+            por sua vez, podem ser construídas de portas lógicas elementares como a Nand ou Nor, é claro que cada uma
+            dessas portas consiste de alguns dispositivos de switching. tipicamente implementados por transistors. e
+            cada transistor é construído de - Bem, nós não iremos mais longe, é onde a ciência da computação acaba e a
+            física começa."
+          </blockquote>
+
+          <p>A frase acima esta no livro Building a Modern Computer from First Principles, isso significa que detalhes
+            do hardware não estão no escopo de estudo da ciência da computação, sendo assim não precisamos saber como
+            certas tarefas são implementadas, podemos apenas saber oque elas fazem e consumir seus serviços.</p>
+
+          <h5>Bibliografia</h5>
+          <ul>
+            <li>Noam Nisan, Shimon Schocken. The Elements of Computing Systems: Building a Modern Computer from First
+              Principles, The MIT Press, 2005.</li>
+            <li>David A. Patterson, John Hennessy. Organização e Projeto de Computadores. 4ª ed, Elsevier, 2013.</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+
+
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
             </li>
           </ul>
+          <p class="copyright text-muted">Copyright &copy; Your Website 2018</p>
         </div>
       </div>
-    </nav>
+    </div>
+  </footer>
 
-    <!-- Page Header -->
-    <header class="masthead" style="background-image: url('../img/home-bg.jpg')">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="site-heading">
-              <span class="subheading">Computação, Programação e Afins</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Post Content -->
-    <article>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <h2>O computador em Camadas</h2>
-            <p>O computador é uma maquina complexa, uma boa maneira de ter uma visão gral de seu funcionamento é dividi-la em componentes e estudar a responsabilidade de cada um individualmente, e depois entender como esses componentes se integram. Nesse artigo busco dar ao leitor uma visão geral do que acontece quando o programa esta em execução, destacando seus principais componente apatir de um ponto de vista top-down (de cima para baixo), conforme figura a seguir:</p>
+  <!-- Custom scripts for this template -->
+  <script src="../js/clean-blog.min.js"></script>
 
-            <img style="width:200px; height:200px; margin-left:-10px" class="img-fluid" src="../img/computer-layers.png" alt="">
-
-            <p>O computador possui componentes fisicos e abstratos, hardware e software respectivamente. As sessões abaixo irão detalhar mais a parte abstrata, o software. O hardware será visto apenas como o componete fisico capaz de seguir as instruções do software.</p>
-
-            <p>Muitos programadores não sabem oque acontece nas camadas abaixo do programa, como acontece a integração entre programa, sistema operacional e hardware. Esse artigo traz um vislumbre sobre oque ocorre por debaixo dos panos quando o programa esta em execução.</p>
-
-            <h4 class="">Programas de Usuário</h4>
-
-            <p>São programas usados pelo usuário final, seja ele um economista organizando seu trabalho em um editor de planilhas, um engenheiro civil construindo um projeto de um novo edifício usando um DAC (desenho assistido por computador), ou um programador escrevendo seus programas em um editor de texto. Esse é motivo pelo qual os computadores existem, para prover suporte a diversas áreas através de programas de usuário. Esses programas são criados usando uma linguagem de programação, que sucintamente falando são maneiras de instruir o hardware a fazer alguma coisa.</p>
-
-            <h4 class="">Sistema Operacional</h4>
-
-            <p>Quando criamos nosso programa ele não funciona de forma independente, ele sempre vai interagir com o sistema operacional para pedir suporte, mas oque seria exatamente esse suporte?. São funções já prontas disponíveis em memória que podem ser usadas pelos programas de usuário. Funções que implementam funcionalidades de propósito geral como escrever dados em dispositivo de saída, ler dados de um dispositivo de entrada, alocar memória... Também é responsabilidade do sistema operacional gerenciar a memória, cada programa deve ter uma área de memoria reservada , um programa não pode ler ou escrever dados em uma posição de memoria que esta em uso por outros programas.</p>
-            
-            <h5> Chamadas de Sistema</h5>
-
-            <p>Quando um programa solicita uma função do sistema operacional ele faz isso através de uma chamada de sistema (syscall), quando isso acontece o programa para de executar e o sistema operacional entra em cena. O programa pode interagir diretamente com o sistema operacional ou através de uma biblioteca padrão disponibilizada junto com o sistema operacional, por exemplo glibc (GNU library C) do linux.</p>
-
-            <h5> O Kernel</h5>
-
-            <p>O componente principal do sistema operacional é o kernel (do inglês núcleo), é nele que ficam implementadas todas as interfaces das chamadas de sistemas, e também é ele que gerencia os drivers e a memoria. Na figura acima foi usada um figura que mostra a arquitetura de um sistema operacional linux porem o conceito de kernel esta presente em todos de sistemas operacionais.</p>
-
-            <h4>Hardware</h4>
-
-            <p>Todas as camadas acima da camada do hardware só podem ser visualizadas através de abstrações, mas o hardware é algo físico ele pode ser visto, tocado e sentido. É ele o responsável por executar as instruções do software. O Hardware do computador é composto de vários componentes, os principais são: I/O (input/output) ,processador e a memoria. O hardware realiza algumas operações básicas para qualquer computador, como: entrada e saída de dados, processamento e armazenamento. A interação entre esses componentes é basicamente da seguinte forma: o processador obtém dados e instruções da memoria, os dispositivos de entrada guardam dados na memoria e os dispositivos de saída leem dados da memoria e apresentam o resultado da computação para o usuário através de um monitor ou para outro computador através de uma placa de rede. Os cursos de ciência da computação e analise de sistemas não se aprofundam muito no estudo do hardware, geralmente o mais profundo que chegamos é até portas lógicas.</p>
-
-            <blockquote class="blockquote">
-              "Dispositivos de hardware são construídos a partir de pacote integrados de portas lógicas. E essas portas, por sua vez, podem ser construídas de portas lógicas elementares como a Nand ou Nor, é claro que cada uma dessas portas consiste de alguns dispositivos de switching. tipicamente implementados por transistors. e cada transistor é construído de - Bem, nós não iremos mais longe, é onde a ciência da computação acaba e a física começa."
-            </blockquote>
-
-            <p>A frase acima esta no livro Building a Modern Computer from First Principles, isso significa que detalhes do hardware não estão no escopo de estudo da ciência da computação, sendo assim não precisamos saber como certas tarefas são implementadas, podemos apenas saber oque elas fazem e consumir seus serviços.</p>
-
-            <h5>Bibliografia</h5>
-            <ul>
-              <li>Noam Nisan, Shimon Schocken. The Elements of Computing Systems: Building a Modern Computer from First Principles, The MIT Press, 2005.</li>
-              <li>David A. Patterson, John Hennessy. Organização e Projeto de Computadores. 4ª ed, Elsevier, 2013.</li>
-            </ul>
-           
-          </div>
-        </div>
-      </div>
-    </article>
-
-    <hr>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 mx-auto">
-            <ul class="list-inline text-center">
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-            </ul>
-            <p class="copyright text-muted">Copyright &copy; Your Website 2018</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="../vendor/jquery/jquery.min.js"></script>
-    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="../js/clean-blog.min.js"></script>
-
-  </body>
+</body>
 
 </html>
