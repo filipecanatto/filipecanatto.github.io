@@ -67,9 +67,9 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <h2>O computador em Camadas</h2>
           <p>O computador é uma maquina complexa, uma boa maneira de ter uma visão gral de seu funcionamento é
-            dividi-la em componentes e estudar a responsabilidade de cada um individualmente, e depois entender como
+            dividi-lo em componentes e estudar a responsabilidade de cada um individualmente, e depois entender como
             esses componentes se integram. Nesse artigo busco dar ao leitor uma visão geral do que acontece quando o
-            programa esta em execução, destacando seus principais componente apatir de um ponto de vista top-down (de
+            programa esta em execução, partindo de um ponto de vista top-down (de
             cima para baixo), conforme figura a seguir:</p>
 
           <img style="width:200px; height:200px; margin-left:-10px" class="img-fluid" src="../img/computer-layers.png"
@@ -83,7 +83,7 @@
             entre programa, sistema operacional e hardware. Esse artigo traz um vislumbre sobre oque ocorre por debaixo
             dos panos quando o programa esta em execução.</p>
 
-          <h4 class="">Programas de Usuário</h4>
+          <h4 class="">1. Programas de Usuário</h4>
 
           <p>São programas usados pelo usuário final, seja ele um economista organizando seu trabalho em um editor de
             planilhas, um engenheiro civil construindo um projeto de um novo edifício usando um DAC (desenho assistido
@@ -92,7 +92,7 @@
             programas são criados usando uma linguagem de programação, que sucintamente falando são maneiras de
             instruir o hardware a fazer alguma coisa.</p>
 
-          <h4 class="">Sistema Operacional</h4>
+          <h4 class="">2. Sistema Operacional</h4>
 
           <p>Quando criamos nosso programa ele não funciona de forma independente, ele sempre vai interagir com o
             sistema operacional para pedir suporte, mas oque seria exatamente esse suporte?. São funções já prontas
@@ -102,26 +102,27 @@
             programa deve ter uma área de memoria reservada , um programa não pode ler ou escrever dados em uma posição
             de memoria que esta em uso por outros programas.</p>
 
-          <h5> Chamadas de Sistema</h5>
+          <h5>2.1 Chamadas de Sistema</h5>
 
           <p>Quando um programa solicita uma função do sistema operacional ele faz isso através de uma chamada de
             sistema (syscall), quando isso acontece o programa para de executar e o sistema operacional entra em cena.
             O programa pode interagir diretamente com o sistema operacional ou através de uma biblioteca padrão
             disponibilizada junto com o sistema operacional, por exemplo glibc (GNU library C) do linux.</p>
 
-          <h5> O Kernel</h5>
+          <h5>2.2 O Kernel</h5>
 
           <p>O componente principal do sistema operacional é o kernel (do inglês núcleo), é nele que ficam
             implementadas todas as interfaces das chamadas de sistemas, e também é ele que gerencia os drivers e a
             memoria. Na figura acima foi usada um figura que mostra a arquitetura de um sistema operacional linux porem
             o conceito de kernel esta presente em todos de sistemas operacionais.</p>
 
-          <h4>Hardware</h4>
+          <h4>3. Hardware</h4>
 
           <p>Todas as camadas acima da camada do hardware só podem ser visualizadas através de abstrações, mas o
             hardware é algo físico ele pode ser visto, tocado e sentido. É ele o responsável por executar as instruções
-            do software. O Hardware do computador é composto de vários componentes, os principais são: I/O
-            (input/output) ,processador e a memoria. O hardware realiza algumas operações básicas para qualquer
+            do software. O Hardware do computador é composto de vários componentes, os principais são: dispositivos de
+            I/O
+            (input/output), processador e memoria. O hardware realiza algumas operações básicas para qualquer
             computador, como: entrada e saída de dados, processamento e armazenamento. A interação entre esses
             componentes é basicamente da seguinte forma: o processador obtém dados e instruções da memoria, os
             dispositivos de entrada guardam dados na memoria e os dispositivos de saída leem dados da memoria e
