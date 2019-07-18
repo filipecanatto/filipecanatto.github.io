@@ -1,4 +1,4 @@
-# filipecanatto-blog
+# blog
 
 ## Project setup
 ```
